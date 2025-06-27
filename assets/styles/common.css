@@ -1,0 +1,102 @@
+:root {
+    /* Base Palette */
+    --color-primary: #732642;
+    /* Deep Maroon */
+    --color-secondary: #2D3859;
+    /* Navy Blue */
+    --color-accent: #BFB595;
+    /* Beige */
+    --color-warm: #BF8578;
+    /* Warm Coral */
+    --color-light: #F2F2F2;
+    /* Off White */
+
+    /* Variants & Tints */
+    --primary-dark: #501a2e;
+    --primary-light: #944060;
+
+    --secondary-dark: #1d2641;
+    --secondary-light: #475276;
+
+    --accent-dark: #9c947c;
+    --accent-light: #e6e2c7;
+
+    --warm-dark: #a3675b;
+    --warm-light: #e3b6a8;
+
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+
+    --bg-light: #fafafa;
+    --bg-dark: #1e1e1e;
+
+    /* Common Utilities */
+    --border-radius: 6px;
+    --btn-padding: 10px 20px;
+    --btn-font-size: 16px;
+    --btn-transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: var(--btn-padding);
+    border: none;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    cursor: pointer;
+    transition: var(--btn-transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    padding: var(--btn-padding);
+    border: none;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    cursor: pointer;
+    transition: var(--btn-transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-dark);
+    color: var(--color-accent);
+}
+
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    padding: var(--btn-padding);
+    border: none;
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    cursor: pointer;
+    transition: var(--btn-transition);
+}
+
+.btn-accent:hover {
+    background-color: var(--color-warm);
+    color: var(--color-light);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: var(--btn-padding);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    cursor: pointer;
+    transition: var(--btn-transition);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
