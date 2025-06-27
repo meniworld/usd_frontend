@@ -37,6 +37,12 @@
     --btn-transition: all 0.3s ease;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .btn-primary {
     background-color: var(--color-primary);
     color: var(--color-light);
