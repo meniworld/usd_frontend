@@ -1,0 +1,66 @@
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Grid System for Forms (Optional) */
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .form-grid.two-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Form Group */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* Input, Textarea, Select */
+.form-control {
+    width: 100%;
+    padding: 1.2rem 0.75rem 0.5rem;
+    font-size: var(--btn-font-size);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    color: var(--text-dark);
+    transition: var(--btn-transition);
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+/* Floating Label */
+.form-group label {
+    position: absolute;
+    top: 1.2rem;
+    left: 0.75rem;
+    font-size: var(--btn-font-size);
+    color: var(--accent-dark);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: var(--bg-light);
+    padding: 0 0.25rem;
+}
+
+/* Active Floating State */
+.form-control:focus+label,
+.form-control:not(:placeholder-shown)+label {
+    top: 0.2rem;
+    left: 0.6rem;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+}
