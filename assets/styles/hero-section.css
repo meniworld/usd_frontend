@@ -1,0 +1,113 @@
+/* HERO SECTION */
+.hero {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 60px 20px 80px;
+    margin-top: 70px;
+    /* to avoid overlap with fixed navbar */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    color: var(--accent-light);
+    line-height: 1.5;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    margin-right: 16px;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: var(--warm-light);
+    color: var(--color-light);
+}
+
+.hero-buttons .btn-outline {
+    background-color: transparent;
+    color: var(--color-light);
+    border: 2px solid var(--color-light);
+}
+
+.hero-buttons .btn-outline:hover {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons a {
+        margin: 8px 8px 0 8px;
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 32px;
+    }
+}
