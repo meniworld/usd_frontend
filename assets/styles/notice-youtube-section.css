@@ -1,0 +1,116 @@
+.notice-video-section {
+    padding: 60px 20px;
+    background-color: var(--bg-light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Notice List */
+.notice-list-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.notice-list-wrapper h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+}
+
+.notice-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notice-list li {
+    margin-bottom: 12px;
+}
+
+/* Notice links styling */
+.notice-link {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.notice-link:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+}
+
+.notice-date {
+    flex-shrink: 0;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.notice-link p {
+    margin: 0;
+    line-height: 1.4;
+    flex: 1;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Show More anchor button */
+.show-more-label {
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    flex: 1;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* We set height dynamically with JS */
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .notice-list-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .video-wrapper {
+        height: 250px !important;
+        /* fallback fixed height on mobile */
+    }
+}
