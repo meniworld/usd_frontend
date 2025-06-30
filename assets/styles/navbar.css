@@ -6,6 +6,7 @@
     width: 100%;
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 0 0 0;
 }
 
 .container {
@@ -164,6 +165,14 @@
 
 .menu-toggle.open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-highlight{
+    background: var(--bg-light);
+    color: var(--text-dark) !important;
+    border-radius: 8px;
+    padding: 8px 12px !important;
+    font-weight: 700;
 }
 
 /* Responsive */
