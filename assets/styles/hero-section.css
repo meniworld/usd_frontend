@@ -1,6 +1,6 @@
 /* HERO SECTION */
 .hero {
-    background-color: var(--color-primary);
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     color: var(--color-light);
     padding: 60px 20px 80px;
     margin-top: 70px;
