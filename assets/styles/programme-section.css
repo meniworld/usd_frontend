@@ -3,7 +3,11 @@
     padding: 50px 20px;
     color: var(--text-dark);
     max-width: 1200px;
+    width: 100%;
+    /* Ensure full responsiveness */
     margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .section-title {
@@ -20,6 +24,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Individual course card */
@@ -33,6 +39,8 @@
     flex-direction: column;
     cursor: pointer;
     position: relative;
+    width: 100%;
+    max-width: 100%;
 }
 
 .course-card:hover {
@@ -99,17 +107,6 @@
     background-color: var(--color-secondary);
 }
 
-/* Responsive tweaks */
-@media (max-width: 600px) {
-    .course-card img {
-        height: 150px;
-    }
-
-    .section-title {
-        font-size: 26px;
-    }
-}
-
 /* ======================= */
 /* Last card as full anchor */
 /* ======================= */
@@ -126,6 +123,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     position: relative;
+    width: 100%;
+    max-width: 100%;
 }
 
 .course-card-link:hover {
@@ -179,10 +178,25 @@
     color: var(--color-accent);
 }
 
-/* Responsive tweaks for last card */
+/* Responsive tweaks */
 @media (max-width: 600px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card,
+    .course-card-link {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .course-card img,
     .course-card-link img {
         height: 150px;
+    }
+
+    .section-title {
+        font-size: 26px;
     }
 
     .course-card-link h3 {

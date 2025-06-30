@@ -1,0 +1,74 @@
+.research-section {
+    position: relative;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/049/855/296/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg') center center/cover no-repeat;
+    padding: 100px 20px;
+    color: var(--color-light);
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+/* Gradient overlay */
+.research-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, var(--primary-dark), var(--color-secondary));
+    opacity: 0.85;
+    transition: opacity 1s ease;
+    z-index: 1;
+}
+
+/* Content above the image & gradient */
+.research-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.research-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-accent);
+}
+
+.research-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--color-light);
+}
+
+.research-btn {
+    text-decoration: none;
+    padding: var(--btn-padding);
+    font-size: var(--btn-font-size);
+    border-radius: var(--border-radius);
+    transition: var(--btn-transition);
+    display: inline-block;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .research-title {
+        font-size: 28px;
+    }
+
+    .research-description {
+        font-size: 16px;
+    }
+}

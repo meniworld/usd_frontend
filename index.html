@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="assets/styles/slider-section.css">
     <link rel="stylesheet" href="assets/styles/programme-section.css">
     <link rel="stylesheet" href="assets/styles/counter-section.css">
+    <link rel="stylesheet" href="assets/styles/research-section.css">
+    <link rel="stylesheet" href="assets/styles/partner-section.css">
 </head>
 
 <body>
     <!-- NAVBAR MENU START -->
     <nav class="navbar">
-        <div class="container">
+        <div class="navbar-container">
             <!-- <div class="logo">USD</div> -->
             <a href="index.html"><img src="assets/images/logo/USD.png" alt="USD" class="logo-img"></a>
 
@@ -381,6 +383,34 @@
         </div>
     </section>
 
+    <!-- COUNTER -->
+    <section class="count-section">
+        <div class="count-overlay">
+            <div class="count-container">
+                <div class="count-box">
+                    <h3 class="count-number" data-target="1500">0</h3>
+                    <p>Students</p>
+                </div>
+                <div class="count-box">
+                    <h3 class="count-number" data-target="120">0</h3>
+                    <p>Teachers</p>
+                </div>
+                <div class="count-box">
+                    <h3 class="count-number" data-target="20">0</h3>
+                    <p>Departments</p>
+                </div>
+                <div class="count-box">
+                    <h3 class="count-number" data-target="85">0</h3>
+                    <p>Courses</p>
+                </div>
+                <div class="count-box">
+                    <h3 class="count-number" data-target="3000">0</h3>
+                    <p>Alumni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- OUR PROGRAMME -->
     <section class="courses-section">
         <h2 class="section-title">Our Courses</h2>
@@ -451,34 +481,89 @@
         </div>
     </section>
 
-    <!-- COUNTER -->
+    <!-- Research Section -->
+    <section class="research-section" id="researchSection">
+        <div class="research-overlay" id="researchOverlay"></div>
+        <div class="research-content">
+            <h2 class="research-title">Research & Innovation</h2>
+            <p class="research-description">
+                At USD, we encourage groundbreaking research that drives real-world impact.
+                Our faculty and students are constantly pushing boundaries across disciplines.
+            </p>
+            <a href="#" class="btn-primary research-btn">Interested in Research?</a>
+        </div>
+    </section>
 
-    <section class="count-section">
-        <div class="count-overlay">
-            <div class="count-container">
-                <div class="count-box">
-                    <h3 class="count-number" data-target="1500">0</h3>
-                    <p>Students</p>
+    <!-- PARTNER -->
+    <section class="partner-section">
+        <div class="section-title">Our Partners</div>
+
+        <div class="partner-slider-wrapper" id="partnerSliderWrapper">
+            <div class="partner-slider-track" id="partnerSliderTrack">
+                <div class="partner-card">
+                    <img src="https://toppng.com/uploads/preview/free-logo-design-11551057495oqoep79juj.png"
+                        alt="Partner 1" />
+                    <p>Partner 1</p>
                 </div>
-                <div class="count-box">
-                    <h3 class="count-number" data-target="120">0</h3>
-                    <p>Teachers</p>
+                <div class="partner-card">
+                    <img src="https://i.pinimg.com/736x/da/c7/58/dac758d7606690d057a9cbba5f259154.jpg"
+                        alt="Partner 2" />
+                    <p>Partner 2</p>
                 </div>
-                <div class="count-box">
-                    <h3 class="count-number" data-target="20">0</h3>
-                    <p>Departments</p>
+                <div class="partner-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFvWBuDtTe-w1yx4_AccwMkytK76FQiS6Lw&s"
+                        alt="Partner 3" />
+                    <p>Partner 3</p>
                 </div>
-                <div class="count-box">
-                    <h3 class="count-number" data-target="85">0</h3>
-                    <p>Courses</p>
+                <div class="partner-card">
+                    <img src="https://toppng.com/uploads/preview/free-logo-design-11551057495oqoep79juj.png"
+                        alt="Partner 4" />
+                    <p>Partner 4</p>
                 </div>
-                <div class="count-box">
-                    <h3 class="count-number" data-target="3000">0</h3>
-                    <p>Alumni</p>
+                <div class="partner-card">
+                    <img src="https://i.pinimg.com/736x/da/c7/58/dac758d7606690d057a9cbba5f259154.jpg"
+                        alt="Partner 5" />
+                    <p>Partner 5</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFvWBuDtTe-w1yx4_AccwMkytK76FQiS6Lw&s"
+                        alt="Partner 6" />
+                    <p>Partner 6</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://toppng.com/uploads/preview/free-logo-design-11551057495oqoep79juj.png"
+                        alt="Partner 1" />
+                    <p>Partner 7</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://i.pinimg.com/736x/da/c7/58/dac758d7606690d057a9cbba5f259154.jpg"
+                        alt="Partner 2" />
+                    <p>Partner 8</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFvWBuDtTe-w1yx4_AccwMkytK76FQiS6Lw&s"
+                        alt="Partner 3" />
+                    <p>Partner 9</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://toppng.com/uploads/preview/free-logo-design-11551057495oqoep79juj.png"
+                        alt="Partner 4" />
+                    <p>Partner 10</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://i.pinimg.com/736x/da/c7/58/dac758d7606690d057a9cbba5f259154.jpg"
+                        alt="Partner 5" />
+                    <p>Partner 11</p>
+                </div>
+                <div class="partner-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFvWBuDtTe-w1yx4_AccwMkytK76FQiS6Lw&s"
+                        alt="Partner 6" />
+                    <p>Partner 12</p>
                 </div>
             </div>
         </div>
     </section>
+
 
 
 
@@ -489,6 +574,8 @@
     <script src="assets/scripts/notice-youtube-section.js"></script>
     <script src="assets/scripts/slider-section.js"></script>
     <script src="assets/scripts/counter-section.js"></script>
+    <script src="assets/scripts/research-section.js"></script>
+    <script src="assets/scripts/partner-section.js"></script>
 
 </body>
 
