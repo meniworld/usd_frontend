@@ -93,6 +93,11 @@
 }
 
 /* Responsive */
+@media (max-width: 880px) {
+    .slide img {
+        height: 400px;
+    }
+}
 @media (max-width: 768px) {
     .slider-btn {
         font-size: 20px;
