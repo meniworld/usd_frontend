@@ -104,13 +104,18 @@
     .container {
         flex-direction: column;
     }
-
+    
     .notice-list-wrapper {
         margin-bottom: 30px;
     }
-
+    
     .video-wrapper {
         height: 250px !important;
         /* fallback fixed height on mobile */
+    }
+}
+@media (max-width: 360px) {
+    .notice-link{
+        flex-direction: column;
     }
 }
