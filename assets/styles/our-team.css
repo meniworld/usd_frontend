@@ -1,0 +1,119 @@
+.team-section {
+    background-color: var(--bg-light);
+    padding: 80px 20px;
+    animation: fadeInUp 1s ease;
+    max-width: 1200px;
+    margin: 120px auto;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-align: center;
+    padding: 25px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--color-primary);
+}
+
+.team-card h3 {
+    font-size: 20px;
+    color: var(--color-secondary);
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Call-to-action */
+.team-cta {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.team-cta .btn-primary {
+    font-size: 16px;
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+.team-cta .cta-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+
+    .team-card img {
+        max-width: 120px;
+        height: 120px;
+    }
+
+    .team-card h3 {
+        font-size: 18px;
+    }
+}
