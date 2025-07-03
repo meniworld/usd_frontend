@@ -134,4 +134,9 @@
         gap: 10px;
         text-align: center;
     }
+
+    .social-icons {
+        justify-content: center;
+        align-items: center;
+    }
 }

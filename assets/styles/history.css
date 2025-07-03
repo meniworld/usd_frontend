@@ -147,3 +147,108 @@
         width: 100%;
     }
 }
+
+.founder-message-section {
+    padding: 60px 20px;
+    background-color: var(--bg-light);
+}
+
+.founder-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    animation: fadeInUp 1s ease;
+}
+
+.founder-img {
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.founder-text {
+    flex: 1;
+}
+
+.founder-text h2 {
+    font-size: 28px;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.founder-text p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.hall-of-fame {
+    padding: 60px 20px;
+    background: var(--bg-light);
+}
+
+.alumni-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.alumni-card {
+    background: white;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.alumni-card:hover {
+    transform: translateY(-8px);
+}
+
+.alumni-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.awards-section {
+    padding: 60px 20px;
+    background: #fdfdfd;
+}
+
+.awards-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.history-gallery {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
