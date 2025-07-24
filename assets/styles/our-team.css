@@ -1,5 +1,4 @@
 .team-section {
-    background-color: var(--bg-light);
     padding: 80px 20px;
     animation: fadeInUp 1s ease;
     max-width: 1200px;

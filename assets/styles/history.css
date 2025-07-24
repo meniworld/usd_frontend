@@ -5,6 +5,7 @@
     text-align: center;
     color: white;
     animation: fadeIn 1.5s ease;
+    margin: 120px 0;
 }
 
 .history-banner-content h1 {
@@ -151,6 +152,8 @@
 .founder-message-section {
     padding: 60px 20px;
     background-color: var(--bg-light);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .founder-content {
